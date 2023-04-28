@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gafata&family=Inter:wght@200;300;400;900&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        font-family: "Ubuntu Mono", monospace;
+        background-color: #000;
+        margin: 0;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+      }
+      @keyframes Bgcolor {
+        0% {
+          text-shadow: 0px 0px 25px rgba(255, 81, 81, 0.6);
+        }
+        33% {
+          text-shadow: 0px 0px 25px rgba(51, 98, 255, 0.6);
+        }
+        100% {
+          text-shadow: 0px 0px 25px rgba(255, 81, 81, 0.6);
+        }
+      }
+
+      h1 {
+        text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        bottom: 20%;
+        animation: fadeInBottomLeft;
+        animation: Bgcolor infinite 2s;
+        animation-duration: 1s;
+      }
+      @media only screen and (min-width: 768px) {
+        h1 {
+          bottom: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="1400" height="600"></canvas>
+    <h1>Love You Lusy</h1>
+    <script src="script.js"></script>
+  </body>
+</html>
